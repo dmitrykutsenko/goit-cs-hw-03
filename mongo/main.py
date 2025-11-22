@@ -3,7 +3,7 @@ from pymongo.errors import ConnectionFailure, PyMongoError
 
 def get_collection():
     """
-    Підключається до локального MongoDB (Docker) та повертає колекцію 'cats' у базі 'cats_db'.
+    Підключаємося до локального MongoDB (Docker) та повертаємо колекцію 'cats' у базі 'cats_db'.
     """
     try:
         client = MongoClient("mongodb://localhost:27017/")
@@ -176,5 +176,5 @@ def menu():
 
 
 if __name__ == "__main__":
-    # ключове — цей блок має бути у твоєму файлі
+    # ключове
     menu()

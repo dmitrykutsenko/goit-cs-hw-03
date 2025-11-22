@@ -6,10 +6,9 @@ import json
 def create_database():
     client = None
     try:
-        # 🔧 Вибери правильний URI:
-        # Для локального Docker:
+        # 🔧 Для локального Atlas via Docker:
         client = MongoClient("mongodb://localhost:27017/")
-        # Для Atlas заміни рядок на свій справжній URI з консолі Atlas:
+        # Для справжнього мережевого Atlas -> URI з консолі Atlas:
         # client = MongoClient("mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority")
 
         client.admin.command("ping")
