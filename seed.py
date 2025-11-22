@@ -1,5 +1,6 @@
 from psycopg2 import Error
 from faker import Faker
+
 import random
 
 from create_tables import create_connection, database

@@ -1,5 +1,6 @@
 import psycopg2
 from psycopg2 import Error
+
 from create_tables import create_connection, database
 
 
